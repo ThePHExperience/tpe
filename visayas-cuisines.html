@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Visayas — Cuisines | The Philippine Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="attractions.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="images\icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+  <style>
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/visayas/cuisine2.jpg");
+      background-position: center;
+    }
+
+    .sections.one {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/visayas/cuisine1.jpg');
+    }
+
+    .sections.two {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine2.jpg');
+      background-position: center;
+    }
+
+    .sections.three {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine3.jpg');
+      background-position: bottom;
+    }
+
+    .sections.four {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine4.jpg');
+      background-position: bottom;
+    }
+
+    .sections.five {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine5.jpg');
+    }
+
+    .sections.six {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine6.jpg');
+      background-position: bottom;
+    }
+
+    .sections.seven {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine7.jpg');
+    }
+
+    .sections.eight {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/visayas/cuisine8.jpg');
+      background-position: bottom;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .section-title.right, .section-title.left {
+        margin-top: 100px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="main-content">
+    <section class="banner">
+      <header>
+        <a href="index.html"><img src="images\logo.png"></a>
+      </header>
+
+      <button class="menu-button" id="btnMenu" type="button">
+        <i class="material-icons">menu</i>
+      </button>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="index.html" class="menu-link menu-link--home">Home</a>
+          <hr style="width:99%" color="#333">
+          <a href="visayas-attractions.html" class="menu-link">Attractions</a>
+          <a href="visayas-cuisines.html" class="menu-link">Cuisines</a>
+          <a href="visayas-festivals.html" class="menu-link">Festivals and Events</a>
+          <a href="#" class="menu-link menu-link--active">Activities</a>
+          <hr style="width:99%" color="#333">
+          <a href="contact-us.html" class="menu-link">Contact Us</a>
+        </div>
+        <div class="menu-overlay"></div>
+
+      </nav>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <ul class="nav-list">
+          <li><a href="visayas-attractions.html">Attractions</a></li>
+          <li><a href="visayas-cuisines.html">Cuisines</a></li>
+          <li><a href="visayas-festivals.html">Festivals and Events</a></li>
+          <li><a href="#">Activities</a></li>
+        </ul>
+      </div>
+      <center>
+        <hr>
+      </center>
+      <div class="banner-content">
+        <div class="banner-text">
+          <p>CUISINES</p>
+          <div class="location-info">
+            <img src="images/location.png" alt="" height="20px">
+            <p>Cebu, Philippines</p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollDown">
+        <p>scroll down to explore <br><br></p>
+        <img src="images/next.png" height="20px">
+      </div>
+    </section>
+    <section class="sections one">
+      <div>
+        <div class="section-title left">
+          CHICKEN <br> INASAL
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Bacolod, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          Health-conscious foodies from around the world will definitely fall in love with
+          Bacolod.  Being a part of the island known as the “Organic Food Bowl of Asia,”
+          Bacolod has some of the best organic farms sprawling across the city. Also widely
+          known for the chicken inasal (Filipino-style roast chicken),
+
+          <span class="content-second"><br><br>It is not marinated or prepared like the usual
+            chicken barbeque found in the rest of the country. The marinate does not make use
+            of soy sauce and consists of other ingredients to create a unique flavor found only
+            in this part of the Philippines. </span>
+        </p>
+      </div>
+    </section>
+    <section class="sections two">
+      <div>
+        <div class="section-title right">
+          LECHON
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Cebu, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          A Filipino celebration isn’t complete without lechon, which is why it’s
+          imperative for foodies to visit the “Lechon Capital of the World.” In Cebu,
+          lechon isn’t just another pork dish. It’s a meal carefully prepared so that
+          it always has the perfect balance of crunchiness and tenderness.
+
+          <span class="content-second"><br><br>Cebu lechon is a traditional dish prepared
+            for special events or fiestas such as holidays, parties and festivals. It is
+            best enjoyed with the whole family as there is a lot of meat to be shared!</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="sections three">
+      <div>
+        <div class="section-title right">
+          LA PAZ <br>BATCHOY
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Iloilo, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          La Paz Batchoy is one of Iloilo’s best-known signature dishes and a must-try delicacy
+          served in restaurants all over Iloilo City. This noodle soup is made with miki,
+          (round noodles), pork organs (liver, spleen, kidneys and heart), chicken stock,
+          beef loin, shrimp stock, and garnished with chicharon (pork cracklings).
+
+          <span class="content-second"><br><br>It is best eaten at the batchoyan (batchoy stalls)
+            in La Paz Market where it originated. The most famous places to eat batchoy are Ted’s,
+            Deco’s, Netong’s, and Inggo’s.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections four">
+      <div>
+        <div class="section-title left">
+          SUGARY <br>GOODS
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Bohol, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          While foodies can’t exactly get a sugar high from Bohol’s Chocolate Hills, they can definitely
+          score sweet treats nearby. Bohol actually has an impressive supply of sugary goods — like biko,
+          maruya, otap, and kalamay — that many Filipinos love sharing with foreign friends.
+
+          <span class="content-second"><br><br>Peanut Kisses and Boholano Ube Polvoron work great as
+            pasalubong, too! To add to Bohol’s allure, the tropical destination just recently opened
+            the Panglao International Airport, which makes this paradise more accessible to foreigners.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections five">
+      <div>
+        <div class="section-title right">
+          BURIRING
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Cadiz, Negros Occidental, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          A literal "to die for" dish, buriring is a species of puffer fish found in Negros during
+          the months of July and August. Often found in multitudes during these months, these puffer
+          fish strangely lose their toxicity and have since gained popularity in the region as a native
+          delicacy.
+
+          <span class="content-second"><br><br>When the fish is at its peak and maturity, the buriring
+            turns yellowish from the fat covering its enlarged liver. The fat slightly thickens the soup
+            and provides a blend of sour and spicy. It is tasty and delicious that you wouldn't mind sticky
+            lips afterwards.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections six">
+      <div>
+        <div class="section-title left">
+          PIAYA
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Negros Occidental, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Explore the Underwater Life at Malapascua Island</span><br>
+          One of the most delicious products that the province of Negros Occidental has is piaya. Its name
+          literally means pressed pastry. Made by filling dough with a mixture of muscovado and glucose syrup,
+          the filled dough is then flattened with a rolling pin, sprinkled with sesame seeds and baked on a
+          griddle.
+
+          <span class="content-second"><br><br>While the delicacy may be common in Negros Occidental, the most
+            delicious one is made by Bongbong’s Piaya and Barquillos. Bongbong’s piaya has left a legacy of being
+            one of the best pastry delicacies that the country can offer. Multitudes of people from here and
+            abroad have attested to the unique taste of this authentic Ilonggo treat. </span>
+        </p>
+      </div>
+    </section>
+    <section class="sections seven">
+      <div>
+        <div class="section-title right">
+          GINABOT
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Cebu, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          This Cebuano street food is not for the faint of heart. Sold by pungko-pungko (sidewalk
+          vendors) all over Cebu, this finger food is made by chopping up pork intestines and deep-frying
+          them until they are golden brown. Similar to chicharon, they are best paired with a spicy
+          vinegar sauce and a cold drink.
+
+          <span class="content-second"><br><br>Ginabot is very cheap and accessible, so anyone can eat as
+            much as they’d like, though it is highly advised to eat the cracklings moderately, as they are
+            rich in cholesterol. Ginabot is best eaten with bare hands and customers are often encouraged to do
+            so.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections eight">
+      <div>
+        <div class="section-title right">
+          MORÓN
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Leyte, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          Leyte takes flavor to the next level with Morón, a suman (rice cake) that is mixed
+          with tablea (native chocolate tablets). To make it, one has to steep glutinous rice
+          overnight and grind into a powder. Served in a banana leaf wrapper, it is popularly
+          eaten with hot coffee or sikwate (hot chocolate).
+
+          <span class="content-second"><br><br>It is a popular delicacy in Leyte specifically
+            in Tacloban City. It is always a part of local festivities such as fiestas, festivals,
+            and birthdays. You will also see these commonly sold in pasalubong shops or stalls for
+            tourists to bring home to their family and friends. </span>
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+          <div class="column">
+            <h4>TOURISM AGENCIES</h4>
+            <ul>
+              <li><a href="http://tourism.gov.ph" target="_blank">DOT</a></li>
+              <li><a href="http://www.nationalparks.ph/" target="_blank">NPDC</a></li>
+              <li><a href="https://www.facebook.com/NayongPilipinoOfficial/" target="_blank">NPF</a></li>
+              <li><a href="http://www.divephilippines.com.ph/" target="_blank">PCSSD</a></li>
+              <li><a href="http://www.pra.gov.ph/" target="_blank">PRA</a></li>
+              <li><a href="http://www.tieza.gov.ph/" target="_blank">TIEZA</a></li>
+              <li><a href="https://www.tpb.gov.ph/" target="_blank">TPB</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Inquiries / Questions</h4>
+            <p class="inquiry">
+              If you have any inquiries, questions, or need <br />
+              more information, send us a message.
+            </p>
+            <br />
+            <a href="contact-us.html"><div class="contact-us">
+              <img src="images/message.png" alt="" height="18px">
+              <p>Contact Us</p>
+            </div></a>
+            <h4>Social Networks</h4>
+            <a href="https://www.facebook.com/The-Philippine-Experience-102642668670184" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook" /></a>
+            <a href="https://twitter.com/phexperience15" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/phexperience15/" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram" /></a>
+            <a href="mailto:thephexperience@inquiry.com" target="_blank"><img class="social" src="images/email.png" alt="Email" /></a>
+          </div>
+
+        </div>
+        <div class="row">
+          <p class="copyright">Copyright &#169; 2021 SillyDev. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <a class="backTop"></a>
+  </div>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".menu");
+
+      //Open menu when menu button is clicked
+      document.querySelector("#btnMenu").addEventListener("click", () => {
+        nav.classList.add("menu--open");
+      });
+
+      //Close menu when body is clicked
+      document.querySelector(".menu-overlay").addEventListener("click", () => {
+        nav.classList.remove("menu--open");
+      });
+
+      document.querySelector(".menu-link--active").addEventListener("click", () => {
+        nav.classList.remove("menu--open");
+      });
+
+      //Close menu when body is scrolled
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos <= currentScrollPos) {
+          nav.classList.remove("menu--open");
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    });
+  </script>
+</body>
+<script>
+  $.scrollify({
+    section: "section",
+    after: function() {},
+    scrollSpeed: 1000,
+  });
+
+  var btn = $('.backTop');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300');
+  });
+</script>
+
+</html>

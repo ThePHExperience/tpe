@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mindanao — Attractions | The Philippine Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="attractions.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="images\icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+  <style>
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/mindanao/attraction8.png");
+    }
+
+    .sections.one {
+      background-image:url('images/mindanao/attraction1.png');
+    }
+
+    .sections.two {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction2.png');
+    }
+
+    .sections.three {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction3.png');
+      background-position: bottom;
+    }
+
+    .sections.four {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction4.jpg');
+      background-position: top;
+    }
+
+    .sections.five {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction5.jpg');
+    }
+
+    .sections.six {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction6.png');
+      background-position: top;
+    }
+
+    .sections.seven {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/mindanao/attraction7.jpg');
+      background-position: top;
+    }
+
+    .sections.eight {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/mindanao/attraction8.png');
+      background-position: bottom;
+    }
+
+
+    @media only screen and (max-width:768px){
+      .two .section-title, .three .section-title {
+        font-size: 80px;
+        line-height: 70px;
+      }
+    }
+
+    @media only screen and (max-width:550px){
+      .two .section-title, .three .section-title {
+        font-size: 60px;
+        line-height: 50px;
+      }
+    }
+
+    @media only screen and (max-width:400px){
+      .two .section-title, .three .section-title {
+        font-size: 50px;
+        line-height: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="main-content">
+    <section class="banner">
+      <header>
+        <a href="index.html"><img src="images\logo.png"></a>
+      </header>
+
+      <button class="menu-button" id="btnMenu" type="button">
+        <i class="material-icons">menu</i>
+      </button>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="index.html" class="menu-link menu-link--home">Home</a>
+          <hr style="width:99%" color="#333">
+          <a href="#" class="menu-link menu-link--active">Attractions</a>
+          <a href="mindanao-cuisines.html" class="menu-link">Cuisines</a>
+          <a href="mindanao-festivals.html" class="menu-link">Festivals and Events</a>
+          <a href="mindanao-activities.html" class="menu-link">Activities</a>
+          <hr style="width:99%" color="#333">
+          <a href="contact-us.html" class="menu-link">Contact Us</a>
+        </div>
+        <div class="menu-overlay"></div>
+
+      </nav>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <ul class="nav-list">
+          <li><a href="#">Attractions</a></li>
+          <li><a href="mindanao-cuisines.html">Cuisines</a></li>
+          <li><a href="mindanao-festivals.html">Festivals and Events</a></li>
+          <li><a href="mindanao-activities.html">Activities</a></li>
+        </ul>
+      </div>
+      <center>
+        <hr>
+      </center>
+      <div class="banner-content">
+        <div class="banner-text">
+          <p>ATTRACTIONS</p>
+          <div class="location-info">
+            <img src="images/location.png" alt="" height="20px">
+            <p>Naked Island, Siargao, Philippines</p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollDown">
+        <p>scroll down to explore <br><br></p>
+        <img src="images/next.png" height="20px">
+      </div>
+    </section>
+    <section class="sections one">
+      <div>
+        <div class="section-title right">
+          CLOUD 9
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Siargao, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">One of the world's best surfing spot.</span><br>
+          One of the most well-known waves world wide and one of the best in the Philippines,
+          It is a perfect barreling right hand reef break that can be both fun and challenging.
+          Although it is a relatively short wave, the fact that it barrels nearly the whole
+          way guarantees satisfaction.
+
+          <span class="content-second"><br><br>It offers towering waves that cater to all
+            types of surfers, from beginners to pros, who are looking for a quick fix of
+            sun, sand, sea, and extreme adventure.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections two">
+      <div>
+        <div class="section-title left">
+          MAGPUPUNGKO <br>ROCK POOLS
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Siargao, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Natural rock pools perfect for cliff jumping and swimming</span><br>
+          This natural phenomenon has created a handful of natural rock pools that appear every day at low
+          tide. There are lots of different pools dotted along the coastline in this area, so even though
+          it is a popular tourist attraction you won’t be packed into one small pool.
+
+          <span class="content-second"><br><br>The crystal clear blue water here is amazing and looked
+            even better from above when we chucked the drone up to grab some aerial shots. When the tide
+            is out, the sun warms the pools up really quickly, making them ideal for lazing in for a
+            couple of hours. Grab some friends, jump on a scooter and make your way up to the ultimate
+            Siargao rock pools.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections three">
+      <div>
+        <div class="section-title right">
+          HINATUAN <br>ENCHANTED RIVER
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Surigao del Sur, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Clear blue saltwater river hidden in the jungle.</span><br>
+          On the east coast of the island of Mindanao, flowing into the Philippine Sea and the
+          Pacific Ocean is a river so clear, its sapphire blue hues look like solid gemstones
+          glinting in the sun. The Hinatuan Enchanted River is a salt water passageway that
+          springs from the jungle only to travel a short 600 meters to the sea.
+
+          <span class="content-second"><br><br> This waterway, surrounded by thick jungle,
+            vines, and orchids, was once locally known as Libwak before the “Father of Philippine
+            Tourism,” Modesto Farolan, referred to it as the Enchanted River in his famous poem,
+            “Rio Encantado”.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections four">
+      <div>
+        <div class="section-title left">
+          MOUNT APO
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Davao, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">The highest mountain in the Philippines and among the highest in Southeast Asia.</span><br>
+          Dubbed as the “King of Philippine Peaks,” it is a must-visit especially if you’re looking for
+          a thrill adventure. There are different trails you can take and there are seven different peaks
+          at the summit where you can see scenic views–from the majestic sunrise and sunset, to the magical
+          sight of seeing the ground touching the sky.
+
+          <span class="content-second"><br><br>It is covered by a forest of tall, tropical hardwoodsit is
+            the home of the rare Philippine eagle and features numerous peaks and valleys, as well as
+            Malasita Falls, Sibulao Lake, and the Kisinte Hot Springs.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections five">
+      <div>
+        <div class="section-title right">
+          TINAGO FALLS
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Lanao del Norte, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">A hidden but majestic waterfall</span><br>
+          Like a miracle pill, the sight of Tinago Falls provides a soothing cure for any hangover.
+          The streaming water flowing out even from the tiny cracks of its high rise Wall
+          seem to wash away all unsavory elements of the world. The cold and crystalline water
+          surrounded by the lush vegetation, creates an inviting natural pool.
+
+          <span class="content-second"><br><br>Tucked within a ravine, this majestic waterfall
+            is the main tourist attraction of the province and also serves as a water source
+            for residents near the area. Its name—Tinago in Tagalog—means “hidden” that perfectly
+            fits its location that one can only reach by descending some 500 steps.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections six">
+      <div>
+        <div class="section-title left">
+          CAMIGUIN
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Northern Mindanao, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Dubbed as The Island Born of Fire</span><br>
+          Known as the island “Born of Fire” due to its volcanic origin, the island-
+          province was formed from a series of volcanic eruptions and earthquakes
+          thousand years ago and created what is now a spectacular destination full
+          of natural wonders and historic sites.
+
+          <span class="content-second"><br><br>This compact island also hides numerous
+            waterfalls, natural springs, unspoiled beaches and diving spots that will
+            please adventurous travelers. Camiguin is home to a mysterious Sunken Cemetery
+            which continues to fascinate travelers from all over the world.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections seven">
+      <div>
+        <div class="section-title right">
+          TINUY-AN<br>FALLS
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Surigao del Sur, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Dubbed as the Crown Jewel of  Surigao del Sur.</span><br>
+          Unlike other waterfalls, Tinuy-an Falls has natural pools where you can swim.
+          The natural pool of the second waterfall of the three layers⁠ is the biggest. It
+          is wide enough to accommodate bamboo rafts to take guests closer to the falls
+          where the waters drop.
+
+          <span class="content-second"><br><br>The water that drapes and cascades through
+            the three waterfalls features a curtain of white froth that makes Tinuy-an Falls
+            worth the long travel. Aside from this, the whole area is teeming with lush
+            vegetation and tall trees that makes the waterfalls more appealing.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections eight">
+      <div>
+        <div class="section-title left">
+          NAKED <br> ISLAND
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Siargao, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">A famous beach in Siargao that doesn’t have any shade.</span><br>
+          Naked island, as the name suggests, is completely bare. This tourist spot in Mindanao has
+          nothing but white sand and azure waters surrounding it, no distractions for the 360° view
+          of the island. Naked Island is one of the three islands visible from the shores of General Luna,
+          Siargao. The other two are Dako Island and Guyam Island.
+
+          <span class="content-second"><br><br>During high tide, Naked Island becomes smaller because
+            other parts sink a few feet below sea level, so it’s much better for tourists to go during
+            low tide. This time, the island is more perfect, like a white paradise where you can just
+            lie down and enjoy the sand.</span>
+        </p>
+      </div>
+
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+          <div class="column">
+            <h4>TOURISM AGENCIES</h4>
+            <ul>
+              <li><a href="http://tourism.gov.ph" target="_blank">DOT</a></li>
+              <li><a href="http://www.nationalparks.ph/" target="_blank">NPDC</a></li>
+              <li><a href="https://www.facebook.com/NayongPilipinoOfficial/" target="_blank">NPF</a></li>
+              <li><a href="http://www.divephilippines.com.ph/" target="_blank">PCSSD</a></li>
+              <li><a href="http://www.pra.gov.ph/" target="_blank">PRA</a></li>
+              <li><a href="http://www.tieza.gov.ph/" target="_blank">TIEZA</a></li>
+              <li><a href="https://www.tpb.gov.ph/" target="_blank">TPB</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Inquiries / Questions</h4>
+            <p class="inquiry">
+              If you have any inquiries, questions, or need <br />
+              more information, send us a message.
+            </p>
+            <br />
+            <a href="contact-us.html"><div class="contact-us">
+              <img src="images/message.png" alt="" height="18px">
+              <p>Contact Us</p>
+            </div></a>
+            <h4>Social Networks</h4>
+            <a href="https://www.facebook.com/The-Philippine-Experience-102642668670184" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook" /></a>
+            <a href="https://twitter.com/phexperience15" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/phexperience15/" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram" /></a>
+            <a href="mailto:thephexperience@inquiry.com" target="_blank"><img class="social" src="images/email.png" alt="Email" /></a>
+          </div>
+
+        </div>
+        <div class="row">
+          <p class="copyright">Copyright &#169; 2021 SillyDev. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <a class="backTop"></a>
+  </div>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".menu");
+
+      //Open menu when menu button is clicked
+      document.querySelector("#btnMenu").addEventListener("click", () => {
+        nav.classList.add("menu--open");
+      });
+
+      //Close menu when body is clicked
+      document.querySelector(".menu-overlay").addEventListener("click", () => {
+        nav.classList.remove("menu--open");
+      });
+
+      //Close menu when body is scrolled
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos <= currentScrollPos) {
+          nav.classList.remove("menu--open");
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    });
+  </script>
+</body>
+<script>
+  $.scrollify({
+    section: "section",
+    after: function() {},
+    scrollSpeed: 1000,
+  });
+
+  var btn = $('.backTop');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300');
+  });
+</script>
+
+</html>

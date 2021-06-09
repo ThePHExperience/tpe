@@ -1,0 +1,541 @@
+@font-face {
+  font-family: 'bitterbrush';
+  src: url('fonts/bitterbrush.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monsterrat';
+  src: url('fonts/monsterrat.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('fonts/anton.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url('fonts/futura-bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-attachment: scroll;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: top center;
+}
+
+header {
+  margin: 10px 0;
+  text-align: center;
+  height: 120px;
+}
+
+header img {
+  height: 100%;
+}
+
+.menu-button, .menu-links, .menu-overlay {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  margin: 20px auto 30px;
+}
+
+.nav-list {
+  width: fit-content;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.nav-list li {
+  align-items: center;
+  font-family: segoe;
+  display: inline-flex;
+  margin: 0 30px;
+  padding: 10px;
+}
+
+.nav-list li a {
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-list a:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .3s ease;
+}
+
+.nav-list a:hover:after {
+  transform: scaleX(1);
+}
+
+hr {
+  width: 95%;
+}
+
+.welcome {
+  margin: 50px 0 0;
+  text-align: center;
+  font-family: bitterbrush;
+  font-size: 140px;
+  line-height: 170px;
+}
+
+.welcome span {
+  text-align: center;
+  font-size: 270px;
+}
+
+.location-info {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  font-family: monsterrat;
+  font-size: 14px;
+  text-indent: 5px;
+}
+
+.top-picks {
+  width: 90%;
+  margin: 60px auto 150px;
+}
+
+.top-picks .title {
+  text-align: center;
+  font-family: anton;
+  font-size: 40px;
+}
+
+.top-picks-content {
+  margin: 30px 0 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pick-1, .pick-2, .pick-3 {
+  width: 330px;
+  height: 480px;
+  background-size: cover;
+  padding: 0 15px 10px;
+  position: relative;
+}
+
+.pick-1::before, .pick-2:before, .pick-3:before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pick-1:hover::before, .pick-2:hover::before, .pick-3:hover::before {
+  content: ' ';
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.pick-content {
+  margin: 220px 15px 0 0;
+  position: absolute;
+}
+
+.pick-title {
+  font-family: futura-bold;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 0 10px;
+}
+
+.pick-description {
+  font-family: monsterrat;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.pick-location {
+  margin: 0 0 20px;
+  width: fit-content;
+  display: flex;
+  font-family: futura-bold;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+}
+
+.pick-number {
+  height: 130px;
+  position: absolute;
+  right: 5px;
+  bottom: -50px;
+}
+
+.pick-number img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    height: 750px;
+    background-size: cover;
+  }
+
+  header {
+    height: 100px;
+    margin: 3px 0;
+  }
+
+  .welcome {
+    font-size: 90px;
+    line-height: 120px;
+    margin: 30px 0 0;
+  }
+
+  .welcome span {
+    font-size: 210px;
+  }
+
+  .top-picks {
+    width: 95%;
+    margin: 60px auto 100px;
+  }
+
+  .pick-1, .pick-2, .pick-3 {
+    width: 250px;
+    height: 350px;
+    margin: 10px auto 80px;
+    background-position: center;
+  }
+
+  .pick-content {
+    margin: 130px 10px 0 0;
+  }
+
+  .pick-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .pick-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .pick-location {
+    font-size: 14px;
+    bottom: 0;
+  }
+
+  .pick-location img {
+    height: 40px;
+  }
+
+  .pick-number {
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .pick-1, .pick-2, .pick-3 {
+    width: 200px;
+    height: 330px;
+  }
+
+  .pick-content {
+    margin: 110px 5px 0 0;
+  }
+
+  .pick-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .pick-location {
+    font-size: 12px;
+  }
+
+  .pick-location img {
+    height: 28px;
+  }
+
+  .pick-number {
+    height: 80px;
+    bottom: -45px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 700px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  .menu-button, .menu-links, .menu-overlay {
+    display: block;
+  }
+
+  .menu-button {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  .menu-button i {
+    font-size: 36px;
+  }
+
+  .menu-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 250px;
+    background: #202020;
+    transform: translateX(-300px);
+    transition: transform 0.3s;
+  }
+
+  .menu--open .menu-links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-link {
+    font-family: segoe;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 20px;
+    background: transform 0.2s;
+  }
+
+  .menu-link--home {
+    margin: 15px 0;
+  }
+
+  .menu-link--active {
+    color: black;
+    font-weight: bold;
+  }
+
+  .menu-link--active,
+  .menu-link:hover {
+    background: #CCC;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 3;
+  }
+
+  .menu--open .menu-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navbar {
+    display: none;
+    margin: 10px auto 10px;
+  }
+
+  .welcome {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .welcome span {
+    font-size: 160px;
+  }
+
+  .top-picks-content {
+    display: block;
+  }
+
+  .pick-1, .pick-2, .pick-3 {
+    width: 450px;
+    height: 330px;
+  }
+
+  .pick-content {
+    margin: 140px 30px 0 0;
+  }
+
+  .pick-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .pick-description {
+    font-size: 16px;
+  }
+
+  .pick-location {
+    font-size: 18px;
+  }
+
+  .pick-location img {
+    height: 46px;
+  }
+
+  .pick-number {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    height: 640px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .menu-button {
+    top: 20px;
+  }
+
+  .menu-links {
+    width: 200px;
+    transform: translateX(-250px);
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+
+  .welcome {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .welcome span {
+    font-size: 120px;
+  }
+
+  .location-info {
+    font-size: 12px;
+  }
+
+  .top-picks {
+    margin: 60px auto;
+  }
+
+  .top-picks .title {
+    font-size: 30px;
+  }
+
+  .pick-1, .pick-2, .pick-3 {
+    width: 280px;
+    height: 400px;
+  }
+
+  .pick-content {
+    margin: 170px 10px 0 0;
+  }
+
+  .pick-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .pick-description {
+    font-size: 14px;
+  }
+
+  .pick-location {
+    font-size: 14px;
+  }
+
+  .pick-location img {
+    height: 36px;
+  }
+
+  .pick-number {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .welcome {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .welcome span {
+    font-size: 100px;
+  }
+
+  .top-picks .title {
+    font-size: 26px;
+  }
+  .pick-1, .pick-2, .pick-3 {
+    width: 250px;
+    height: 400px;
+  }
+
+  .pick-content {
+    margin: 170px 10px 0 0;
+  }
+
+  .pick-number {
+    height: 90px;
+  }
+}

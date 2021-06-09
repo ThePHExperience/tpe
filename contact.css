@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'bitterbrush';
+  src: url('fonts/bitterbrush.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monsterrat';
+  src: url('fonts/monsterrat.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('fonts/anton.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url('fonts/futura-bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/************************************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(1, 74, 81);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/contact-back2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  background-position: bottom;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  padding-left: 30px;
+  height: 110px
+}
+
+header img {
+  height: 100%;
+}
+
+.main-content {
+  height: 1150px;
+  display: flex;
+  flex-flow: column;
+  color: #202020;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.banner-text {
+  width: 600px;
+  height: 200px;
+  margin: 100px 0 0;
+  text-align: center;
+}
+
+.banner-text span {
+  font-family: futura-bold;
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.banner-text p {
+  font-family: monsterrat;
+  font-size: 16px;
+}
+
+hr {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact-section {
+  height: 600px;
+  color: white;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 450px;
+  font-family: monsterrat;
+}
+
+.contact-info .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.contact-info ul {
+  margin: 30px 0;
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.contact-info ul a{
+  color: white;
+}
+
+.contact-info ul li {
+  display: flex;
+  align-items: center;
+  text-indent: 10px;
+  margin: 10px;
+}
+
+.contact-info img {
+  height: 30px;
+  width: 30px;
+}
+
+.contact-form {
+  width: 650px;
+  font-family: monsterrat;
+}
+
+.contact-form .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 50px 30px;
+}
+
+.form-box {
+  width: 90%;
+  height: 500px;
+  background-color: rgba(32, 32, 32, 0.7);
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #202020;
+  padding: 20px 10px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-input {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 20px;
+}
+
+.form-input input {
+  width: 45%;
+  height: 40px;
+  font-family: segoe;
+  font-size: 18px;
+  padding: 0 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.form-input input:focus, textarea:focus {
+  border: 1px solid #202020;
+}
+
+select {
+  width: 95%;
+  height: 40px;
+  margin: 15px auto 20px;
+  font-family: segoe;
+  font-size: 18px;
+  padding: 0 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+textarea {
+  width: 91%;
+  height: 200px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-family: segoe;
+  font-size: 18px;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 10px auto;
+  font-family: monsterrat;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: white;
+  outline: none;
+  color: #202020;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: #202020;
+  cursor: pointer;
+  color: white;
+  font-weight: normal;
+  border: 1px solid #202020;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .contact-section {
+    padding: 100px 50px;
+  }
+
+  .contact-info {
+    width: 500px;
+  }
+
+  .form-input input {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+
+  .contact-info .title, .contact-form .title {
+    font-size: 20px;
+  }
+
+  .contact-info ul {
+    font-size: 16px;
+  }
+
+  .contact-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .form-box {
+    height: 480px;
+  }
+  .form-input {
+    flex-flow: column;
+    margin: 0 auto 10px;
+  }
+
+  .form-input input {
+    width: 93%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  select {
+    margin: 0 auto 20px;
+    font-size: 16px;
+  }
+
+  textarea{
+    height: 100px;
+    font-size: 16px;
+    width: 89%;
+  }
+
+  button {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+    text-align: center;
+  }
+
+  .main-content {
+    height: 1450px;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+  .banner-text {
+    margin: 20px 0;
+  }
+
+  .contact-section {
+    flex-flow: column;
+    padding: 50px 20px;
+  }
+
+  .contact-info {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .contact-info ul {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  header {
+    height: 70px;
+  }
+
+  .main-content {
+    height: 1350px;
+  }
+
+  .banner {
+    height: 150px;
+  }
+
+  .banner-text {
+    width: 300px;
+  }
+
+  .banner-text span {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+  }
+
+  .contact-info .title, .contact-form .title {
+    font-size: 18px;
+  }
+
+  .contact-info ul  {
+    font-size: 14px;
+  }
+
+  .form-box{
+    height: 430px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .form-input input, select, textarea {
+    font-size: 14px;
+  }
+
+  .form-input input, select {
+    height: 30px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-content {
+    height: 1350px;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+}

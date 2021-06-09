@@ -1,0 +1,564 @@
+@font-face {
+  font-family: 'bitterbrush';
+  src: url('fonts/bitterbrush.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monsterrat';
+  src: url('fonts/monsterrat.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoe';
+  src: url('fonts/segoe.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('fonts/anton.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(1, 74, 81);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/home-background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  padding-left: 30px;
+  height: 110px
+}
+
+header img {
+  height: 100%;
+}
+
+.main-content {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.map, .map-content {
+  height: 650px;
+}
+
+.map {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map-content {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.map-description {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  padding-left: 90px;
+}
+
+.main-content-luzon,
+.main-content-visayas,
+.main-content-mindanao {
+  display: none;
+}
+
+.center {
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -70px;
+}
+
+.welcome {
+  font-size: 110px;
+  text-align: right;
+  font-family: bitterbrush;
+  line-height: 115px;
+}
+
+.welcome-quote {
+  font-size: 20px;
+  text-align: right;
+  font-family: montserrat;
+}
+
+.location-info {
+  margin: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  font-family: monsterrat;
+  font-size: 14px;
+}
+
+.explore {
+  font-family: monsterrat;
+  letter-spacing: .25em;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.explore a {
+  color: white;
+}
+
+.explore.luzon:hover {
+  background-color: blue;
+}
+
+.explore.visayas:hover {
+  background-color: maroon;
+}
+
+.explore.mindanao:hover {
+  background-color: yellow;
+}
+
+.choose-region {
+  text-align: center;
+  font-family: monsterrat;
+  font-weight: bold;
+  margin: -70px 0 20px;
+}
+
+.regions-list {
+  margin: 0 10px;
+}
+
+.regions {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regions li {
+  font-family: anton;
+  padding: 0 100px;
+  display: inline-block;
+}
+
+.regions li a {
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.regions li a:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .3s ease;
+}
+
+.regions li a:hover:after {
+  transform: scaleX(1);
+}
+
+.content {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: rgb(1, 74, 81);
+  text-align: center;
+}
+
+.content-title {
+  font-family: bitterbrush;
+  font-size: 30px;
+}
+
+.content-about {
+  text-align: center;
+  color: white;
+  font-family: monsterrat;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 220px 30px;
+}
+
+.home-div {
+  display: none;
+}
+
+.home-table {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.home-table td {
+  font-family: monsterrat;
+  font-size: 15px;
+  width: 40%;
+  padding-bottom: 30px;
+  vertical-align: middle;
+  padding: 30px 10px;
+}
+
+.home-table th {
+  padding: 15px 10px;
+}
+
+.home-table th img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-content {
+    width: 95%;
+    justify-content: space-around;
+  }
+
+  .map, .map-content {
+    height: 600px;
+  }
+
+  .map {
+    width: 330px;
+  }
+
+  .map-content {
+    width: 510px;
+  }
+
+  .map-description {
+    padding: 0 0 0 20px;
+  }
+
+  .banner .welcome {
+    font-size: 85px;
+    line-height: 75px;
+  }
+
+  .welcome-quote {
+    font-size: 14px;
+  }
+
+  .choose-region {
+    margin: -50px 0 20px;
+  }
+
+  .regions li {
+    padding: 0 50px;
+  }
+
+  .content-about {
+    padding: 10px 100px 30px;
+  }
+
+  .home-table {
+    width: 850px;
+  }
+
+  .home-table td {
+    width: 10%;
+  }
+
+  .home-table th {
+    width: 5%;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .banner .welcome {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .home-table {
+    width: 700px;
+  }
+
+  .home-table th {
+    width: 8%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+    text-align: center;
+  }
+
+  .main-content {
+    display: block;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .main-content-luzon,
+  .main-content-visayas,
+  .main-content-mindanao {
+    display: none;
+  }
+
+  .map, .map-content {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .map {
+    width: 300px;
+    height: 500px;
+  }
+
+  .map-content {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .map-description {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .banner .welcome {
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  .welcome {
+    font-size: 80px;
+    line-height: 50px;
+  }
+
+  .welcome-quote {
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0 10px;
+  }
+
+  .wqluzon, .wqvisayas, .wqmindanao {
+    text-align: justify;
+    text-justify: auto;
+    margin: 30px 0 10px;
+  }
+
+  .location-info {
+    margin-bottom: 15px;
+  }
+
+  .choose-region {
+    margin: 0 0 20px;
+  }
+
+  .regions li {
+    padding: 0;
+  }
+
+  .regions li a {
+    padding: 0;
+    margin: 0 40px;
+  }
+
+  .content-about {
+    padding: 10px 50px 30px;
+  }
+
+  .home-table {
+    display: none;
+  }
+
+  .home-div {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .home-sections {
+    width: 95%;
+    margin: 10px auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons, .sections {
+    margin: 10px;
+  }
+
+  .icons {
+    width: 90px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .icons img {
+    width: 100%;
+  }
+
+  .sections {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sections div {
+    text-align: left;
+  }
+
+  .section-title {
+    font-family: bitterbrush;
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-family: monsterrat;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  header {
+    height: 70px;
+  }
+
+  .map {
+    width: 200px;
+    height: 340px;
+  }
+
+  .banner .welcome {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .welcome {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .welcome-quote {
+    font-size: 14px;
+    margin: 20px 0 10px;
+  }
+
+  .location-info {
+    font-size: 12px;
+  }
+
+  .regions li a {
+    margin: 0 25px;
+  }
+
+  .content-title {
+    font-size: 25px;
+  }
+
+  .content-about {
+    padding: 10px 30px 30px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .icons {
+    width: 80px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner .welcome {
+    font-size: 42px;
+    line-height: 40px;
+  }
+
+  .welcome {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .welcome-quote {
+    font-size: 14px;
+    margin: 20px 0 10px;
+  }
+
+  .regions li a {
+    margin: 0 15px;
+  }
+
+  .content-title {
+    font-size: 22px;
+  }
+
+  .content-about {
+    font-size: 14px;
+  }
+
+  .icons {
+    width: 70px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-description {
+    font-size: 12px;
+  }
+}

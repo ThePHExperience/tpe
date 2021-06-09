@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Luzon — Activities | The Philippine Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="attractions.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="images\icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+  <style>
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/luzon/activity6.jpg");
+      background-position: bottom;
+    }
+
+    .sections.one {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/luzon/activity1.jpg');
+    }
+
+    .sections.two {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity2.jpg');
+    }
+
+    .sections.three {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity3.jpg');
+    }
+
+    .sections.four {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity4.jpg');
+      background-position: left;
+    }
+
+    .sections.five {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity5.jpg');
+    }
+
+    .sections.six {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity6.jpg');
+      background-position: center;
+    }
+
+    .sections.seven {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity7.jpg');
+      background-position: bottom;
+    }
+
+    .sections.eight {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/luzon/activity8.jpg');
+    }
+
+    @media only screen and (max-width: 550px){
+      .five .section-title, .eight .section-title {
+        font-size: 70px;
+        line-height: 60px;
+      }
+    }
+
+    @media only screen and (max-width: 400px){
+      .three .section-title, .five .section-title, .eight .section-title {
+        font-size: 58px;
+        line-height: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="main-content">
+    <section class="banner">
+      <header>
+        <a href="index.html"><img src="images\logo.png"></a>
+      </header>
+
+      <button class="menu-button" id="btnMenu" type="button">
+        <i class="material-icons">menu</i>
+      </button>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="index.html" class="menu-link menu-link--home">Home</a>
+          <hr style="width:99%" color="#333">
+          <a href="luzon-attractions.html" class="menu-link">Attractions</a>
+          <a href="luzon-cuisines.html" class="menu-link">Cuisines</a>
+          <a href="luzon-festivals.html" class="menu-link menu-link--active">Festivals and Events</a>
+          <a href="#" class="menu-link">Activities</a>
+          <hr style="width:99%" color="#333">
+          <a href="contact-us.html" class="menu-link">Contact Us</a>
+        </div>
+        <div class="menu-overlay"></div>
+
+      </nav>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <ul class="nav-list">
+          <li><a href="luzon-attractions.html">Attractions</a></li>
+          <li><a href="luzon-cuisines.html">Cuisines</a></li>
+          <li><a href="luzon-festivals.html">Festivals and Events</a></li>
+          <li><a href="#">Activities</a></li>
+        </ul>
+      </div>
+      <center>
+        <hr>
+      </center>
+      <div class="banner-content">
+        <div class="banner-text">
+          <p>ACTIVITIES</p>
+          <div class="location-info">
+            <img src="images/location.png" alt="" height="20px">
+            <p>Pampanga, Philippines</p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollDown">
+        <p>scroll down to explore <br><br></p>
+        <img src="images/next.png" height="20px">
+      </div>
+    </section>
+    <section class="sections one">
+      <div>
+        <div class="section-title right">
+          ISLAND<br>HOPPING
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Pangasinan, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Go swimming and Island Hopping in Hundred Islands</span><br>
+          Witness the best islands in Pangasinan in your day tour around the Hundred Islands,
+          which is composed of 123 islets. For your first destination, The Governor's Island
+          is a perfect place both for swimming, Island hopping, sightseeing and snorkeling. With
+          more than hundred islands harboring white sand beaches, caves, limestone rocks and cliffs,
+          and rich marine life,
+
+          <span class="content-second"><br><br>Hundred Islands guarantee a well worth escape in this
+            part of Pangasinan. Alaminos City is the gateway to the Hundred Islands National Park.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections two">
+      <div>
+        <div class="section-title left">
+          SURFING
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>La Union, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Ride the waves and chill at the beach of La Union</span><br>
+          Experience the easy waves at the Surfing Capital of the Northern Philippines known for
+          its consistent intermediate quality surf and two surfing seasons from July to October
+          and November to March. Surfing is one of the water sports that anyone can try even without
+          experience.  It is one of the perfect getaways for surfing enthusiast and also the best
+          place to relax and feel the good vibes
+
+          <span class="content-second"><br><br>One of the main reasons why people go here is to surf.
+            La Union has waves that can reach 8 to 10ft on a good swell. The best month to go here is
+            from May to March as the good waves last up to 10 months.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections three">
+      <div>
+        <div class="section-title right">
+          PARAGLIDING
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Carmona, Cavite, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Soar the blue skies</span><br>
+          The charm of paragliding fascinates people from all walks of life. The climate of
+          Philippines support well the cause and stance of paragliding. Philippines are gifted
+          with two windy seasons and this makes the art of paragliding even more enchanting. With
+          sky-touching cliffs, and graced with ridges, the launching and landing site for paragliding
+          is at Carmona, an hour away from Manila.
+
+          <span class="content-second"><br><br> Let go, ride into the wind, and experience adrenaline
+            rush in this paragliding spot in Carmona, Cavite. Paragliding season starts as soon as
+            Hanging Amihan (Northeast Monsoon) comes during the last week of October and ends early April.</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections four">
+      <div>
+        <div class="section-title left">
+          TATTOOS
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Kalinga, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Get a traditional tattoo in Kalinga</span><br>
+          If you want a one-of-a-kind experience, head up north in Kalinga province and have yourself inked
+          by the one and only Apo Whang-od, one of the most sought-after tattoo artists in the Philippines.
+          Apo Whang-Od is the oldest living mambabatok (Kalinga tattoo artist) and was the only one remaining
+          until she recently began training her grandnieces.
+
+          <span class="content-second"><br><br>She uses bamboo hammers, thorns, and soot for tattoos and her
+            craft takes place high up in the mountains of the Cordilleras. But unlike the modern tattoo artists,
+            she’s a master of tattooing the traditional Kalinga way—hand-tapping. </span>
+        </p>
+      </div>
+    </section>
+    <section class="sections five">
+      <div>
+        <div class="section-title right">
+          SANDBOARDING
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Ilocos Norte, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Go sandboarding and ride a 4×4 at the sand dunes</span><br>
+          While Ilocos has a good Vigan tourist spot, a lot of historic sites and undeniably beautiful
+          spots, you shouldn’t also miss the Sand Dunes. If you’re looking for a thrilling and exhilarating
+          trip, the one-hour adventure entails sandboarding lessons and a bumpy ride to the sand dunes.
+          But prepare for sore legs and arms after as you hold on tight.
+
+          <span class="content-second"><br><br>A desert would be one of the landscapes you’d least expect
+            to see in the tropical archipelago of the Philippines, but along the northernmost province on
+            Luzon island there are, indeed, sand dunes! The La Paz Sand Dunes cover 85 square kilometers of
+            sandy coastal desert and beach in Laoag City, the provincial capital of Ilocos Norte. </span>
+        </p>
+      </div>
+    </section>
+    <section class="sections six">
+      <div>
+        <div class="section-title left">
+          ATV RIDES
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Pampanga, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Try 4x4 ATV Rides in Pampanga</span><br>
+          An off-road 4x4 ride to Puning Hot Springs in Angeles, Pampanga should also be on every
+          explorer’s bucket list. Imagine passing through unique rock formations caused by lahar
+          mudflows and running over puddles of water through a gorgeous landscape. It's definitely
+          an experience that excites multiple senses.
+
+          <span class="content-second"><br><br>This activity will definitely take your adventure
+            junkie self a notch. This isn’t your typical boring theme park ride because ATV tours
+            take you off the beaten pat</span>
+        </p>
+      </div>
+    </section>
+    <section class="sections seven">
+      <div>
+        <div class="section-title right">
+          NATURAL HOT<br>SPRINGS
+        </div>
+        <div class="section-location right">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Coron, Palawan, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content left">
+        <p>
+          <span class="content-title">Relax in Natural Hot Springs in Coron</span><br>
+          After a fun day of adventure and delicious food, head to Maquinit Hot Springs and give
+          yourself a soothing respite. Considered one of rarest hot springs in Asia, Maquinit Hot
+          Springs features a number of saltwater pools while it is only about half an hour away from
+          the town center and is at the hillside of Coron.
+
+          <span class="content-second"><br><br>Visitors will find it a delight to dip into the hot
+            pool, with water that originates from the nearby mountain. Tourists often visit the hot
+            springs after taking the 700-step challenge at Mt. Tapyas. </span>
+        </p>
+      </div>
+    </section>
+    <section class="sections eight">
+      <div>
+        <div class="section-title left">
+          WAKEBOARDING
+        </div>
+        <div class="section-location left">
+          <img src="images/location.png" alt="" height="20px">
+          <p>Camarines Sur, Philippines</p>
+        </div>
+      </div>
+      <div class="section-content right">
+        <p>
+          <span class="content-title">Discover Wakeboarding in Camarines Sur</span><br>
+          Wakeboarding has been gaining popularity in the Philippines the past few years and
+          there are now more wakeboarding tours to help you get started in this sport. There
+          are no age restrictions for learning this water sport if you know the basics of swimming.
+          Camarines Sur is the Philippines' wakeboarding capital due to the success of the 2009
+          WWA Ultimate Wakeboard Championships held at CamSur Water Sports Complex.
+
+          <span class="content-second"><br><br>CWC aims to bring cable skiing to a whole new level
+            and attract watersports enthusiasts from all over the world with its top of the line
+            facilities and relaxing environment. </span>
+        </p>
+      </div>
+
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </div>
+          <div class="column">
+            <h4>TOURISM AGENCIES</h4>
+            <ul>
+              <li><a href="http://tourism.gov.ph" target="_blank">DOT</a></li>
+              <li><a href="http://www.nationalparks.ph/" target="_blank">NPDC</a></li>
+              <li><a href="https://www.facebook.com/NayongPilipinoOfficial/" target="_blank">NPF</a></li>
+              <li><a href="http://www.divephilippines.com.ph/" target="_blank">PCSSD</a></li>
+              <li><a href="http://www.pra.gov.ph/" target="_blank">PRA</a></li>
+              <li><a href="http://www.tieza.gov.ph/" target="_blank">TIEZA</a></li>
+              <li><a href="https://www.tpb.gov.ph/" target="_blank">TPB</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Inquiries / Questions</h4>
+            <p class="inquiry">
+              If you have any inquiries, questions, or need <br />
+              more information, send us a message.
+            </p>
+            <br />
+            <a href="contact-us.html"><div class="contact-us">
+              <img src="images/message.png" alt="" height="18px">
+              <p>Contact Us</p>
+            </div></a>
+            <h4>Social Networks</h4>
+            <a href="https://www.facebook.com/The-Philippine-Experience-102642668670184" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook" /></a>
+            <a href="https://twitter.com/phexperience15" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/phexperience15/" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram" /></a>
+            <a href="mailto:thephexperience@inquiry.com" target="_blank"><img class="social" src="images/email.png" alt="Email" /></a>
+          </div>
+
+        </div>
+        <div class="row">
+          <p class="copyright">Copyright &#169; 2021 SillyDev. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <a class="backTop"></a>
+  </div>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".menu");
+
+      //Open menu when menu button is clicked
+      document.querySelector("#btnMenu").addEventListener("click", () => {
+        nav.classList.add("menu--open");
+      });
+
+      //Close menu when body is clicked
+      document.querySelector(".menu-overlay").addEventListener("click", () => {
+        nav.classList.remove("menu--open");
+      });
+
+      //Close menu when body is scrolled
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos <= currentScrollPos) {
+          nav.classList.remove("menu--open");
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    });
+  </script>
+</body>
+<script>
+  $.scrollify({
+    section: "section",
+    after: function() {},
+    scrollSpeed: 1000,
+  });
+
+  var btn = $('.backTop');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300');
+  });
+</script>
+
+</html>
